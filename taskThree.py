@@ -10,7 +10,7 @@ def normalize_phone(phone_number):
         return f"+{cleaned_number}"
     
     if cleaned_number.startswith("0"):
-        return f"+380{cleaned_number}"
+        return f"+380{cleaned_number[1:]}"
     
     return cleaned_number
 
